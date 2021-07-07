@@ -10,11 +10,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1px;
   margin: 1px;
@@ -28,10 +23,5 @@ h4,
 h5,
 h6,
 p {
-  margin: 0.5rem 0rem;
-}
-
-button {
-  padding: 0.1rem;
-  margin: 0.25rem;
+  margin: 0rem 0rem;
 }
