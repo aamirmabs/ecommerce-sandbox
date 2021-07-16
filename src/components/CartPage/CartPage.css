@@ -1,7 +1,7 @@
 .cart-page {
   background-color: rgb(247, 247, 247);
-  width: 60%;
-  padding: 2rem 20%;
+  width: 80%;
+  padding: 2rem 10%;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto 1fr;
@@ -23,7 +23,7 @@
 .cart-page .items {
   grid-area: items;
   font-size: 1.2rem;
-  padding: 1rem;
+  padding-right: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -35,10 +35,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 0.75rem;
 }
 
 .items .item:hover {
+  background-color: antiquewhite;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1.03em;
 }
 
 .item .image {
@@ -47,8 +50,10 @@
   align-self: stretch;
   height: 100px;
   width: 100px;
+}
 
-  border: 2px solid black;
+.image img {
+  width: 100%;
 }
 
 .item .title {
@@ -59,6 +64,15 @@
 .item .count {
   font: inherit;
   width: 15%;
+}
+
+.count i {
+  padding: 0.1rem;
+  margin: 0.4rem;
+}
+
+.count i:hover {
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
 .item .cost {
