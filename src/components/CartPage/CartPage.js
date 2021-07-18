@@ -30,12 +30,16 @@ function CartPage() {
               <div className="title">{title}</div>
               <div className="count">
                 <i
-                  onClick={() => cartDispatch({ type: "increaseCountInCart" })}
+                  onClick={() =>
+                    cartDispatch({ type: "increaseCountInCart", payload: key })
+                  }
                   className="fas fa-chevron-up"
                 ></i>
                 {units}
                 <i
-                  onClick={() => cartDispatch({ type: "decreaseCountInCart" })}
+                  onClick={() =>
+                    cartDispatch({ type: "decreaseCountInCart", payload: key })
+                  }
                   className="fas fa-chevron-down"
                 ></i>
               </div>

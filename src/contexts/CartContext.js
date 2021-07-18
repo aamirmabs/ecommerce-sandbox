@@ -14,15 +14,24 @@ export function CartProvider({ children }) {
 
   const [cartState, cartDispatch] = useReducer((cartState, action) => {
     // local states here
+    const key = action.payload;
+    console.log(cartState[key].units);
+    let newUnits = 0;
 
     switch (action.type) {
       case "increaseCountInCart":
-        console.log("Item increased in cart");
-        return cartState;
+        newUnits = cartState[key].units + 1;
+        return {
+          ...cartState,
+          [key]: { units: newUnits },
+        };
 
       case "decreaseCountInCart":
-        console.log("Item decreased in cart");
-        return cartState;
+        newUnits = cartState[key].units - 1;
+        return {
+          ...cartState,
+          [key]: { units: newUnits },
+        };
 
       case "removeItemFromCart":
         console.log("Item removed from cart");
