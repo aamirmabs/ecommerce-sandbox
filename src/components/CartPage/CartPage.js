@@ -42,6 +42,12 @@ function CartPage() {
                   }
                   className="fas fa-chevron-down"
                 ></i>
+                <i
+                  onClick={() =>
+                    cartDispatch({ type: "removeFromCart", payload: key })
+                  }
+                  className="fas fa-times-circle"
+                ></i>
               </div>
               <div className="cost">Cost</div>
             </div>

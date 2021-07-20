@@ -16,7 +16,7 @@ export function CartProvider({ children }) {
     // local states here
     const key = action.payload;
     console.log(cartState[key].units);
-    let newUnits = 0;
+    let newUnits = -1;
 
     switch (action.type) {
       case "increaseCountInCart":
@@ -33,9 +33,12 @@ export function CartProvider({ children }) {
           [key]: { units: newUnits },
         };
 
-      case "removeItemFromCart":
-        console.log("Item removed from cart");
-        return cartState;
+      case "removeFromCart":
+        newUnits = 0;
+        return {
+          ...cartState,
+          [key]: { units: newUnits },
+        };
 
       default:
         break;
