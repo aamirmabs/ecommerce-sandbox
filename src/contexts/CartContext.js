@@ -4,14 +4,14 @@ const CartContext = createContext(null);
 export { CartContext };
 
 const initialCart = {
-  keyboard001: { units: 5, inWishlist: false },
-  keyboard002: { units: 5, inWishlist: false },
-  keyboard003: { units: 5, inWishlist: false },
+  keyboard001: { units: 1, inWishlist: false },
+  keyboard002: { units: 2, inWishlist: true },
+  keyboard003: { units: 3, inWishlist: false },
+  keyboard004: { units: 4, inWishlist: true },
+  keyboard005: { units: 5, inWishlist: false },
 };
 
 export function CartProvider({ children }) {
-  const cartValue = "I am the cart";
-
   const [cartState, cartDispatch] = useReducer((cartState, action) => {
     // local states here
     const key = action.payload;
@@ -48,7 +48,7 @@ export function CartProvider({ children }) {
   }, initialCart);
 
   return (
-    <CartContext.Provider value={{ cartValue, cartState, cartDispatch }}>
+    <CartContext.Provider value={{ cartState, cartDispatch }}>
       {children}
     </CartContext.Provider>
   );
