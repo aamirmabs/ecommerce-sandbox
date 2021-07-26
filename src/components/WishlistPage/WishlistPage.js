@@ -17,6 +17,7 @@ function Wishlist() {
     } else return acc;
     return acc;
   }, []);
+
   console.log(wishlistKeys);
 
   return (
