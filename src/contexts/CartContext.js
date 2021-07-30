@@ -5,10 +5,10 @@ export { CartContext };
 
 const initialCart = {
   keyboard001: { units: 1, inWishlist: false },
-  keyboard002: { units: 2, inWishlist: true },
-  keyboard003: { units: 3, inWishlist: false },
-  keyboard004: { units: 4, inWishlist: true },
-  keyboard005: { units: 5, inWishlist: false },
+  keyboard002: { units: 1, inWishlist: true },
+  keyboard003: { units: 1, inWishlist: false },
+  keyboard004: { units: 1, inWishlist: true },
+  keyboard005: { units: 1, inWishlist: false },
 };
 
 export function CartProvider({ children }) {
@@ -23,28 +23,26 @@ export function CartProvider({ children }) {
         newUnits = cartState[key].units + 1;
         return {
           ...cartState,
-          [key]: { units: newUnits },
+          [key]: { ...cartState[key], units: newUnits },
         };
 
       case "decreaseCountInCart":
         newUnits = cartState[key].units - 1;
         return {
           ...cartState,
-          [key]: { units: newUnits },
+          [key]: { ...cartState[key], units: newUnits },
         };
 
       case "removeFromCart":
         newUnits = 0;
         return {
           ...cartState,
-          [key]: { units: newUnits },
+          [key]: { ...cartState[key], units: newUnits },
         };
 
       default:
-        break;
+        throw new Error("Cart Error!");
     }
-
-    console.log("Current cart:", cartState);
   }, initialCart);
 
   return (

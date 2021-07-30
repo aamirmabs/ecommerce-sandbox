@@ -16,7 +16,7 @@ function PrimaryDesc(props) {
       <div className="brand">Brand: {brand}</div>
       <div className="layoutText">Layout: {layoutText}</div>
       <div>
-        <button className="btn-primary">Add to Cart</button>
+        <button className="btn-cart">Add to Cart</button>
       </div>
     </div>
   );

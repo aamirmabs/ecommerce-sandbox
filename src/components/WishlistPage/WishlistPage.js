@@ -2,6 +2,7 @@ import React from "react";
 import "./WishlistPage.css";
 
 import { useCart } from "../../contexts/CartContext";
+
 import Card from "../Structural/Card";
 
 function Wishlist() {
@@ -19,10 +20,7 @@ function Wishlist() {
       <div className="card-grid">
         {wishlistKeys.map((key) => {
           return (
-            <Card
-              key={Math.random().toFixed(5) * 10000}
-              productKey={key}
-            ></Card>
+            <Card key={Math.random().toFixed(5) * 10000} productKey={key} />
           );
         })}
       </div>

@@ -1,9 +1,9 @@
 import React from "react";
-import "./Card.css";
 
 import { useProductData } from "../../contexts/ProductDataContext";
 
 import StarRating from "../Structural/StarRating";
+import AddToCartBtn from "../Structural/AddToCartBtn";
 
 function Card(props) {
   const { productData } = useProductData();
@@ -35,7 +35,9 @@ function Card(props) {
           <StarRating rating={rating} />
         </div>
       </div>
-      <div className="cart-button">Add to Cart</div>
+      <div className="cart-button">
+        <AddToCartBtn productKey={key} />
+      </div>
     </div>
   );
 }
