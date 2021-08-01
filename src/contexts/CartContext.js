@@ -15,7 +15,7 @@ export function CartProvider({ children }) {
   const [cartState, cartDispatch] = useReducer((cartState, action) => {
     // local states here
     const key = action.payload;
-    console.log(cartState[key].units);
+    // console.log(cartState[key].units);
     let newUnits = -1;
 
     switch (action.type) {

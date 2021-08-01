@@ -8,8 +8,6 @@ function CartPage() {
   const { cartState, cartDispatch } = useCart();
   const { productData } = useProductData();
 
-  // console.log(productData);
-
   const cartItemKeys = Object.keys(cartState);
 
   return (
@@ -60,7 +58,7 @@ function CartPage() {
                 <div className="cost">Cost</div>
               </div>
             );
-          }
+          } else return <></>;
         })}
       </div>
       <div className="total">TOTAL </div>
