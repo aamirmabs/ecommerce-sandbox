@@ -9,6 +9,11 @@ const initialCart = {
   keyboard003: { units: 1, inWishlist: false },
   keyboard004: { units: 1, inWishlist: true },
   keyboard005: { units: 1, inWishlist: false },
+  keyboard006: { units: 1, inWishlist: false },
+  keyboard007: { units: 1, inWishlist: false },
+  keyboard008: { units: 1, inWishlist: false },
+  keyboard009: { units: 1, inWishlist: false },
+  keyboard010: { units: 1, inWishlist: false },
 };
 
 export function CartProvider({ children }) {

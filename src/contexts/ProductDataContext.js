@@ -32,6 +32,7 @@ export { ProductContext };
 export function ProductProvider({ children }) {
   const productData = {
     keyboard001: {
+      category: { primary: `keyboard`, secondary: [] },
       title: `DROP SHIFT MECHANICAL KEYBOARD`,
       images: {
         base: `/assets/images/products/keyboard001/`,
@@ -123,6 +124,7 @@ export function ProductProvider({ children }) {
       },
     },
     keyboard002: {
+      category: { primary: `keyboard`, secondary: [] },
       title: `DROP + TOKYO KEYBOARD TOKYO60 KEYBOARD KIT`,
       images: {
         base: `/assets/images/products/keyboard002/`,
@@ -210,6 +212,7 @@ export function ProductProvider({ children }) {
       },
     },
     keyboard003: {
+      category: { primary: `keyboard`, secondary: [] },
       title: `DROP CTRL BAREBONES MECHANICAL KEYBOARD`,
       images: {
         base: `/assets/images/products/keyboard003/`,
@@ -297,6 +300,7 @@ export function ProductProvider({ children }) {
       },
     },
     keyboard004: {
+      category: { primary: `keyboard`, secondary: [] },
       title: `DROP + OLKB PLANCK MECHANICAL KEYBOARD KIT V6`,
       images: {
         base: `/assets/images/products/keyboard004/`,
@@ -384,6 +388,7 @@ export function ProductProvider({ children }) {
       },
     },
     keyboard005: {
+      category: { primary: `keyboard`, secondary: [] },
       title: `DROP + OLKB PREONIC KEYBOARD MX KIT V3`,
       images: {
         base: `/assets/images/products/keyboard005/`,
@@ -471,6 +476,7 @@ export function ProductProvider({ children }) {
       },
     },
     keyboard006: {
+      category: { primary: `keyboard`, secondary: [] },
       title: `DROP CTRL HIGH-PROFILE BAREBONES KEYBOARD`,
       images: {
         base: `/assets/images/products/keyboard006/`,
@@ -558,6 +564,7 @@ export function ProductProvider({ children }) {
       },
     },
     keyboard007: {
+      category: { primary: `keyboard`, secondary: [] },
       title: `DROP ALT HIGH-PROFILE MECHANICAL KEYBOARD`,
       images: {
         base: `/assets/images/products/keyboard007/`,
@@ -645,6 +652,7 @@ export function ProductProvider({ children }) {
       },
     },
     keyboard008: {
+      category: { primary: `keyboard`, secondary: [] },
       title: `DROP ALT HIGH-PROFILE MECHANICAL KEYBOARD`,
       images: {
         base: `/assets/images/products/keyboard008/`,
@@ -732,6 +740,7 @@ export function ProductProvider({ children }) {
       },
     },
     keyboard009: {
+      category: { primary: `keyboard`, secondary: [] },
       title: `YMDK SPLIT 64 HOT-SWAPPABLE MECHANICAL KEYBOARD KIT`,
       images: {
         base: `/assets/images/products/keyboard009/`,
@@ -819,6 +828,7 @@ export function ProductProvider({ children }) {
       },
     },
     keyboard010: {
+      category: { primary: `keyboard`, secondary: [] },
       title: `LOGITECH PRO GAMING KEYBOARD`,
       images: {
         base: `/assets/images/products/keyboard010/`,

@@ -10,12 +10,10 @@ const RouterContext = createContext(null);
 export { RouterContext };
 
 export function RouterProvider({ children }) {
-  const routerValue = "Router here!!!";
-
-  const [router, setRouter] = useState("wishlist");
+  const [router, setRouter] = useState("home");
 
   return (
-    <RouterContext.Provider value={{ routerValue, router, setRouter }}>
+    <RouterContext.Provider value={{ router, setRouter }}>
       {children}
     </RouterContext.Provider>
   );
