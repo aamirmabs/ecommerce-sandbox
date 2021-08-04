@@ -14,6 +14,16 @@ const initialCart = {
   keyboard008: { units: 1, inWishlist: false },
   keyboard009: { units: 1, inWishlist: false },
   keyboard010: { units: 1, inWishlist: false },
+  keycap001: { units: 1, inWishlist: false },
+  keycap002: { units: 1, inWishlist: true },
+  keycap003: { units: 1, inWishlist: false },
+  keycap004: { units: 1, inWishlist: true },
+  keycap005: { units: 1, inWishlist: false },
+  keycap006: { units: 1, inWishlist: false },
+  keycap007: { units: 1, inWishlist: false },
+  keycap008: { units: 1, inWishlist: false },
+  keycap009: { units: 1, inWishlist: false },
+  keycap010: { units: 1, inWishlist: false },
 };
 
 export function CartProvider({ children }) {

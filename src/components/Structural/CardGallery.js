@@ -9,22 +9,15 @@ function CardGallery(props) {
 
   const { productData } = useProductData();
 
-  const keyArray = Object.keys(productData).filter(
-    (key) => productData[key].category.primary === category
-  );
-  console.log(keyArray);
+  const keyArray = Object.keys(productData)
+    .filter((key) => productData[key].category.primary === category)
+    .slice(0, limit);
 
   return (
-    <div>
-      <h1>Card Gallery</h1>
-      {category} {limit}
-      <div className="card-grid">
-        {keyArray.map((key) => {
-          return (
-            <Card key={Math.random().toFixed(5) * 10000} productKey={key} />
-          );
-        })}
-      </div>
+    <div className="card-grid">
+      {keyArray.map((key) => {
+        return <Card key={Math.random().toFixed(5) * 10000} productKey={key} />;
+      })}
     </div>
   );
 }
