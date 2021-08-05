@@ -11,13 +11,19 @@ function Card(props) {
   const { productKey: key } = props;
   const product = productData[key];
 
+  const { title } = product;
   const { price, rating, brand, layoutText } = product.parameters;
 
   return (
     <div className="card" key={Math.random().toFixed(5) * 10000}>
-      <div className="image">Image</div>
+      <div className="image">
+        <img
+          src={product.images.base + product.images.card.path}
+          alt={"image of " + title}
+        />
+      </div>
       <div className="title">
-        {product.title}
+        {title}
         <div className="brand-layout">
           by {brand} - {layoutText} Layout
         </div>

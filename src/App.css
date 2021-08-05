@@ -20,12 +20,40 @@
   margin-top: auto;
 }
 
+.section {
+  padding: 0.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section.section-primary {
+  background-color: rgb(255, 255, 255);
+}
+
+.section.section-secondary {
+  background-color: rgb(245, 245, 245);
+}
+
+.section .title-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0% 1%;
+}
+
+.section .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
 .card-grid {
   font: inherit;
   padding: 1%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card-grid .card {
