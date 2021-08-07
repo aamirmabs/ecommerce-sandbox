@@ -20,6 +20,8 @@
   margin-top: auto;
 }
 
+/* SECTION */
+
 .section {
   padding: 0.5rem 0rem;
   display: flex;
@@ -46,6 +48,29 @@
   font-weight: 700;
   font-size: 2rem;
 }
+
+/* SLIDERS */
+
+.hero-slider {
+  /* height: 500px; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-slider .hero-slide {
+  /* height: 500px; */
+  /* width: 100%; */
+  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* CARDS */
 
 .card-grid {
   font: inherit;
