@@ -1,4 +1,4 @@
-.cart-page {
+.cart-container {
   background-color: rgb(247, 247, 247);
   width: 80%;
   padding: 2rem 10%;
@@ -12,7 +12,7 @@
     "items total";
 }
 
-.cart-page .title {
+.cart-container .title {
   grid-area: title;
   text-align: center;
   font-size: 1.5rem;
@@ -20,7 +20,7 @@
   padding: 1rem;
 }
 
-.cart-page .items {
+.cart-container .items {
   grid-area: items;
   font-size: 1.2rem;
   padding-right: 1rem;
@@ -81,10 +81,34 @@
   width: 15%;
 }
 
-.cart-page .total {
+.cart-container .total {
   background-color: rgb(238, 238, 238);
   grid-area: total;
   font-size: 1.35rem;
   font-weight: 500;
   padding: 1rem;
+}
+
+.empty-cart-container {
+  background-color: rgb(247, 247, 247);
+  width: 80%;
+  padding: 2rem 10%;
+  text-align: center;
+}
+
+.empty-cart-container .title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.empty-cart-content .cart-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 5rem;
+}
+.empty-cart-content .cart-content {
+  font-size: 2rem;
 }
