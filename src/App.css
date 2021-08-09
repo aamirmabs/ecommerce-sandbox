@@ -1,4 +1,21 @@
 .App {
-  padding: 0.5rem;
   text-align: inherit;
+  /* display: flex;
+  flex-direction: column; */
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  background-color: rgb(243, 243, 243);
+}
+
+.content {
+  background-color: red;
+}
+
+.footer {
+  background-color: rgb(243, 243, 243);
+  margin-top: auto;
 }

@@ -2,13 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import { SampleProvider } from "./contexts/SampleContext";
+import { RouterProvider } from "./contexts/RouterContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <SampleProvider>
+    <RouterProvider>
       <App />
-    </SampleProvider>
+    </RouterProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

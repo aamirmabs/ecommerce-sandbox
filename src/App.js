@@ -1,11 +1,14 @@
 import "./App.css";
-import SampleComponent from "./components/SampleComponent";
+import Header from "./components/Structural/Header";
+import Content from "./components/Structural/Content.js";
+import Footer from "./components/Structural/Footer";
 
 function App() {
   return (
     <div className="App">
-      <h1>Clean React</h1>
-      <SampleComponent />
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
