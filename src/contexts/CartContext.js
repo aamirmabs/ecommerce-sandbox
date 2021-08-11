@@ -30,27 +30,34 @@ export function CartProvider({ children }) {
     const key = action.payload;
     // console.log(cartState[key].units);
     let newUnits = -1;
+    const totalCost = () => {
+      return newUnits * cartState[key].unitCost;
+    };
 
     switch (action.type) {
       case "increaseCountInCart":
         newUnits = cartState[key].units + 1;
         return {
           ...cartState,
-          [key]: { ...cartState[key], units: newUnits },
+          [key]: {
+            ...cartState[key],
+            units: newUnits,
+            totalCost: totalCost(),
+          },
         };
 
       case "decreaseCountInCart":
         newUnits = cartState[key].units - 1;
         return {
           ...cartState,
-          [key]: { ...cartState[key], units: newUnits },
+          [key]: { ...cartState[key], units: newUnits, totalCost: totalCost() },
         };
 
       case "removeFromCart":
         newUnits = 0;
         return {
           ...cartState,
-          [key]: { ...cartState[key], units: newUnits },
+          [key]: { ...cartState[key], units: newUnits, totalCost: totalCost() },
         };
 
       default:

@@ -18,7 +18,7 @@ function CartPage() {
 
       <div className="items">
         {cartItemKeys.map((key) => {
-          const { units } = cartState[key];
+          const { units, totalCost } = cartState[key];
           const { title } = productData[key];
           const { base, card } = productData[key].images;
 
@@ -56,7 +56,7 @@ function CartPage() {
                     className="fas fa-times-circle"
                   ></i>
                 </div>
-                <div className="cost">Cost</div>
+                <div className="cost">{totalCost}</div>
               </div>
             );
           }
