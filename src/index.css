@@ -25,3 +25,33 @@ h6,
 p {
   margin: 0rem 0rem;
 }
+
+button {
+  min-width: 10rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.25s;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+button.btn-primary {
+  background-color: #222;
+  border: solid 5px gold;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  color: gold;
+}
+
+button.btn-primary:hover {
+  background-color: gold;
+  border: solid 5px #222;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}

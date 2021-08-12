@@ -8,14 +8,14 @@
 }
 
 .header {
-  background-color: rgb(243, 243, 243);
+  background-color: inherit;
 }
 
 .content {
-  background-color: red;
+  background-color: inherit;
 }
 
 .footer {
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(255, 232, 232);
   margin-top: auto;
 }
