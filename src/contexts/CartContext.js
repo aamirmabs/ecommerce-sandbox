@@ -37,32 +37,24 @@ export function CartProvider({ children }) {
     switch (action.type) {
       case "increaseCountInCart":
         newUnits = cartState[key].units + 1;
-        return {
-          ...cartState,
-          [key]: {
-            ...cartState[key],
-            units: newUnits,
-            totalCost: totalCost(),
-          },
-        };
+        break;
 
       case "decreaseCountInCart":
         newUnits = cartState[key].units - 1;
-        return {
-          ...cartState,
-          [key]: { ...cartState[key], units: newUnits, totalCost: totalCost() },
-        };
+        break;
 
       case "removeFromCart":
         newUnits = 0;
-        return {
-          ...cartState,
-          [key]: { ...cartState[key], units: newUnits, totalCost: totalCost() },
-        };
+        break;
 
       default:
         throw new Error("Cart Error!");
     }
+
+    return {
+      ...cartState,
+      [key]: { ...cartState[key], units: newUnits, totalCost: totalCost() },
+    };
   }, initialCart);
 
   const [isCartEmpty, setIsCartEmpty] = useState(true);
