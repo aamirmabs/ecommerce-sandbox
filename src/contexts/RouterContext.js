@@ -12,7 +12,7 @@ export { RouterContext };
 export function RouterProvider({ children }) {
   const routerValue = "Router here!!!";
 
-  const [router, setRouter] = useState("cart");
+  const [router, setRouter] = useState("wishlist");
 
   return (
     <RouterContext.Provider value={{ routerValue, router, setRouter }}>
