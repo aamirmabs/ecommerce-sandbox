@@ -1,9 +1,10 @@
 import React from "react";
 
 import StarRating from "../Structural/StarRating";
+import AddToCartBtn from "../Structural/AddToCartBtn";
 
 function PrimaryDesc(props) {
-  const { title } = props;
+  const { title, productKey } = props;
   const { price, rating, brand, layoutText } = props.data;
 
   return (
@@ -15,9 +16,7 @@ function PrimaryDesc(props) {
       </div>
       <div className="brand">Brand: {brand}</div>
       <div className="layoutText">Layout: {layoutText}</div>
-      <div>
-        <button className="btn-cart">Add to Cart</button>
-      </div>
+      <AddToCartBtn productKey={productKey} />
     </div>
   );
 }
