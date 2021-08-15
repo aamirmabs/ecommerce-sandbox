@@ -58,7 +58,7 @@ function CartPage() {
                 <div className="cost">Cost</div>
               </div>
             );
-          } else return <></>;
+          }
         })}
       </div>
       <div className="total">TOTAL </div>

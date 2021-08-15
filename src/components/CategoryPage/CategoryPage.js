@@ -1,10 +1,12 @@
 import React from "react";
 import "./CategoryPage.css";
 
+import CardGallery from "../Structural/CardGallery";
+
 function CategoryPage() {
   return (
     <div className="category-page">
-      <h1>Category Page</h1>
+      <CardGallery category={"keyboard"} limit={6} />
     </div>
   );
 }
