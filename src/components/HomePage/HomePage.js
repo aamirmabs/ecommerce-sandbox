@@ -1,11 +1,13 @@
 import React from "react";
 import "./HomePage.css";
 
+import HeroSlider from "../Structural/HeroSlider";
 import CardGallery from "../Structural/CardGallery";
 
 function HomePage() {
   return (
     <div className="home-page">
+      <HeroSlider />
       <div className="section section-primary">
         <div className="title-row">
           <div className="title">Keyboards</div>
