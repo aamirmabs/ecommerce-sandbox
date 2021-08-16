@@ -13,9 +13,7 @@ export { CartContext };
 export function CartProvider({ children }) {
   // generating cart based on content of productData
   const { productData } = useProductData();
-
   const initialCart = {};
-
   Object.keys(productData).forEach((key) => {
     initialCart[key] = {
       units: 0,
@@ -24,6 +22,8 @@ export function CartProvider({ children }) {
       totalCost: 0,
     };
   });
+
+  const [cartTotal, setCartTotal] = useState(0);
 
   const [cartState, cartDispatch] = useReducer((cartState, action) => {
     // local states here
@@ -53,7 +53,11 @@ export function CartProvider({ children }) {
 
     return {
       ...cartState,
-      [key]: { ...cartState[key], units: newUnits, totalCost: totalCost() },
+      [key]: {
+        ...cartState[key],
+        units: newUnits,
+        totalCost: totalCost(),
+      },
     };
   }, initialCart);
 
@@ -61,18 +65,27 @@ export function CartProvider({ children }) {
 
   // check if cart is empty on render and change of cartState
   useEffect(() => {
-    const totalItems = Object.keys(cartState).reduce((total, key) => {
-      return total + cartState[key].units;
-    }, 0);
-    // console.log({ totalItems });
-    totalItems > 0 ? setIsCartEmpty(false) : setIsCartEmpty(true);
+    // check if cart is empty -  setIsCartEmpty setCartTotal accordingly
+    const cartStatus = Object.keys(cartState).reduce(
+      (status, key) => {
+        return {
+          itemCount: status.itemCount + cartState[key].units,
+          sum: status.sum + cartState[key].totalCost,
+        };
+      },
+      { itemCount: 0, sum: 0 }
+    );
+    cartStatus.itemCount > 0 ? setIsCartEmpty(false) : setIsCartEmpty(true);
+    cartStatus.sum ? setCartTotal(cartStatus.sum) : setCartTotal(0);
     return () => {
       // console.log("clearing setEffect on CartContext");
     };
   }, [cartState]);
 
   return (
-    <CartContext.Provider value={{ isCartEmpty, cartState, cartDispatch }}>
+    <CartContext.Provider
+      value={{ isCartEmpty, cartState, cartDispatch, cartTotal }}
+    >
       {children}
     </CartContext.Provider>
   );

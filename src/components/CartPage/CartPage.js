@@ -5,7 +5,7 @@ import { useCart } from "../../contexts/CartContext";
 import { useProductData } from "../../contexts/ProductDataContext";
 
 function CartPage() {
-  const { isCartEmpty, cartState, cartDispatch } = useCart();
+  const { isCartEmpty, cartState, cartDispatch, cartTotal } = useCart();
   const { productData } = useProductData();
 
   const cartItemKeys = Object.keys(cartState);
@@ -62,7 +62,7 @@ function CartPage() {
           }
         })}
       </div>
-      <div className="total">TOTAL</div>
+      <div className="total">TOTAL {cartTotal}</div>
       <div className="cart-empty">
         {isCartEmpty && <span>Your Cart is empty</span>}
       </div>
