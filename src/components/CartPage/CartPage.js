@@ -1,23 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CartPage.css";
 
 import { useCart } from "../../contexts/CartContext";
 import { useProductData } from "../../contexts/ProductDataContext";
 
 function CartPage() {
-  const { cartState, cartDispatch } = useCart();
+  const { isCartEmpty, cartState, cartDispatch, cartTotal } = useCart();
   const { productData } = useProductData();
 
   const cartItemKeys = Object.keys(cartState);
 
-  return (
-    <div className="cart-page">
+  const cartPageWithItems = (
+    <div className="cart-container">
       <div className="title">
         <h1>SHOPPING CART</h1>
       </div>
+
       <div className="items">
         {cartItemKeys.map((key) => {
-          const { units } = cartState[key];
+          const { units, totalCost } = cartState[key];
           const { title } = productData[key];
           const { base, card } = productData[key].images;
 
@@ -55,15 +56,36 @@ function CartPage() {
                     className="fas fa-times-circle"
                   ></i>
                 </div>
-                <div className="cost">Cost</div>
+                <div className="cost">{totalCost}</div>
               </div>
             );
           }
         })}
       </div>
-      <div className="total">TOTAL </div>
+      <div className="total">TOTAL {cartTotal}</div>
+      <div className="cart-empty">
+        {isCartEmpty && <span>Your Cart is empty</span>}
+      </div>
     </div>
   );
+
+  const cartPageWithoutItems = (
+    <div className="empty-cart-container">
+      <div className="title">
+        <h1>SHOPPING CART</h1>
+      </div>
+      <div className="empty-cart-content">
+        <div className="cart-icon">
+          <i className="fas fa-cart-plus"></i>
+        </div>
+        <div className="cart-content">
+          Your cart is <strong>EMPTY</strong>...
+        </div>
+      </div>
+    </div>
+  );
+
+  return <div>{isCartEmpty ? cartPageWithoutItems : cartPageWithItems}</div>;
 }
 
 export default CartPage;
