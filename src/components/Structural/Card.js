@@ -8,7 +8,7 @@ import StarRating from "../Structural/StarRating";
 import AddToCartBtn from "../Structural/AddToCartBtn";
 
 function Card(props) {
-  const { displayProduct, history } = useHistory();
+  const { displayProduct, trackProduct } = useHistory();
   const { productData } = useProductData();
   const { cartState, cartDispatch } = useCart();
 
@@ -32,8 +32,7 @@ function Card(props) {
           className="card-title"
           onClick={() => {
             displayProduct(key);
-            // console.log(displayProduct);
-            // console.log(history);
+            trackProduct(key);
           }}
         >
           {title}
