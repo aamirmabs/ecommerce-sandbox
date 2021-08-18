@@ -30,6 +30,8 @@ export function CartProvider({ children }) {
     const key = action.payload;
     // console.log(cartState[key].units);
     let newUnits = -1;
+    let newWishlistState = cartState[key].inWishlist;
+
     const totalCost = () => {
       return newUnits * cartState[key].unitCost;
     };
@@ -47,6 +49,11 @@ export function CartProvider({ children }) {
         newUnits = 0;
         break;
 
+      case "toggleProductInWishlist":
+        newWishlistState = !cartState[key].inWishlist;
+        newUnits = cartState[key].units;
+        break;
+
       default:
         throw new Error("Cart Error!");
     }
@@ -57,6 +64,7 @@ export function CartProvider({ children }) {
         ...cartState[key],
         units: newUnits,
         totalCost: totalCost(),
+        inWishlist: newWishlistState,
       },
     };
   }, initialCart);
