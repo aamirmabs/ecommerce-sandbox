@@ -1,14 +1,17 @@
 import React from "react";
 
 import { useProductData } from "../../contexts/ProductDataContext";
+import { useCart } from "../../contexts/CartContext.js";
 
 import StarRating from "../Structural/StarRating";
 import AddToCartBtn from "../Structural/AddToCartBtn";
 
 function Card(props) {
   const { productData } = useProductData();
+  const { cartState, cartDispatch } = useCart();
 
   const { productKey: key } = props;
+  const { inWishlist } = cartState[key];
   const product = productData[key];
 
   const { title } = product;
@@ -29,10 +32,26 @@ function Card(props) {
         </div>
       </div>
       <div className="wishlist-icon">
-        {product.wishlist ? (
-          <i className="far fa-bookmark"></i>
+        {inWishlist ? (
+          <i
+            className="fas fa-bookmark"
+            onClick={() => {
+              cartDispatch({
+                type: "toggleProductInWishlist",
+                payload: key,
+              });
+            }}
+          ></i>
         ) : (
-          <i className="fas fa-bookmark"></i>
+          <i
+            className="far fa-bookmark"
+            onClick={() => {
+              cartDispatch({
+                type: "toggleProductInWishlist",
+                payload: key,
+              });
+            }}
+          ></i>
         )}
       </div>
       <div className="cost-rating">
