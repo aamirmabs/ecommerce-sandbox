@@ -1,5 +1,6 @@
 import React from "react";
 
+import { useHistory } from "../../contexts/HistoryContext";
 import { useProductData } from "../../contexts/ProductDataContext";
 import { useCart } from "../../contexts/CartContext.js";
 
@@ -7,6 +8,7 @@ import StarRating from "../Structural/StarRating";
 import AddToCartBtn from "../Structural/AddToCartBtn";
 
 function Card(props) {
+  const { displayProduct, history } = useHistory();
   const { productData } = useProductData();
   const { cartState, cartDispatch } = useCart();
 
@@ -26,7 +28,16 @@ function Card(props) {
         />
       </div>
       <div className="title">
-        {title}
+        <div
+          className="card-title"
+          onClick={() => {
+            displayProduct(key);
+            // console.log(displayProduct);
+            // console.log(history);
+          }}
+        >
+          {title}
+        </div>
         <div className="brand-layout">
           by {brand} - {layoutText} Layout
         </div>
