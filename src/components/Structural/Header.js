@@ -16,6 +16,7 @@ function Header() {
       <div className="header-menu">
         <span onClick={() => setRouter("home")}>Home</span>
         <span onClick={() => setRouter("category")}>Category</span>
+        <span onClick={() => setRouter("category")}>Category</span>
         {/* <span onClick={() => setRouter("product")}>Product</span> */}
         <span onClick={() => setRouter("wishlist")}>Wishlist</span>
         <span onClick={() => setRouter("cart")}>Cart</span>

@@ -13,9 +13,9 @@ function StarRating(props) {
 
     ratingJSX.push(
       i <= rating ? (
-        <i key={key} className="fas fa-star"></i>
+        <i key={key} className="fas fa-star fa-sm"></i>
       ) : (
-        <i key={key} className="far fa-star"></i>
+        <i key={key} className="far fa-star fa-sm"></i>
       )
     );
   }
