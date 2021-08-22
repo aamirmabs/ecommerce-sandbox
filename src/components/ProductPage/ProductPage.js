@@ -4,6 +4,7 @@ import "./ProductPage.css";
 import Slider from "../Structural/Slider";
 import PrimaryDesc from "./PrimaryDesc";
 import SecondaryDesc from "./SecondaryDesc";
+import VisitHistory from "../Structural/VisitHistory";
 
 import { useProductData } from "../../contexts/ProductDataContext";
 
@@ -34,6 +35,7 @@ function ProductPage(props) {
         productKey={key}
       />
       <SecondaryDesc data={product.description} />
+      <VisitHistory />
     </div>
   );
 }

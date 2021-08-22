@@ -162,3 +162,72 @@
 .card .cart-button {
   grid-area: cart-button;
 }
+
+/* VISIT HISTORY COMPONENT */
+.visit-history {
+  grid-area: history;
+
+  padding: 0.75rem 0.5rem;
+}
+
+.visit-history-title {
+  font: inherit;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.history-container {
+  font: inherit;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding: 0.75rem 0rem;
+}
+
+.history-container .history-card {
+  font: inherit;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  padding: 0.2rem;
+  margin: 0rem 0.2rem;
+  border: solid 1px #222;
+
+  width: 19vw;
+
+  transition: 0.25s all;
+}
+
+.history-container .history-card:hover {
+  box-shadow: -1px 1px 12px 2px rgba(0, 0, 0, 0.39);
+}
+
+.history-card .image {
+  height: 200px;
+  width: auto;
+}
+
+.history-card .title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.history-card .price {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.history-card .view-button {
+  font: inherit;
+}
+
+.view-button button {
+  font: inherit;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+}

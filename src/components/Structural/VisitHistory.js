@@ -6,7 +6,7 @@ function VisitHistory() {
 
   return (
     <div className="visit-history">
-      <div className="title">Recently Viewed</div>
+      <div className="visit-history-title">Recently Viewed</div>
       <div className="history-container">
         <div className="history-card">
           <div className="image">Image</div>
