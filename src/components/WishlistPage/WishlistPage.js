@@ -4,6 +4,7 @@ import "./WishlistPage.css";
 import { useCart } from "../../contexts/CartContext";
 
 import Card from "../Structural/Card";
+import VisitHistory from "../Structural/VisitHistory";
 
 function Wishlist() {
   const { cartState } = useCart();
@@ -24,6 +25,7 @@ function Wishlist() {
           );
         })}
       </div>
+      <VisitHistory />
     </div>
   );
 }
