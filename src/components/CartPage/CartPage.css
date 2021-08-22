@@ -20,6 +20,10 @@
   padding: 1rem;
 }
 
+.title.center {
+  text-align: center;
+}
+
 .cart-container .items {
   grid-area: items;
   font-size: 1.2rem;

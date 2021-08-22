@@ -3,6 +3,7 @@ import "./HomePage.css";
 
 import HeroSlider from "../Structural/HeroSlider";
 import CardGallery from "../Structural/CardGallery";
+import HistoryBlock from "../HistoryBlock/HistoryBlock";
 
 function HomePage() {
   return (
@@ -22,6 +23,7 @@ function HomePage() {
         </div>
         <CardGallery category={"keycap"} limit={3} />
       </div>
+      <HistoryBlock />
     </div>
   );
 }

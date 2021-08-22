@@ -134,6 +134,17 @@
   font-weight: 100;
 }
 
+.card .card-title {
+  color: rgb(70, 70, 70);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.card .card-title:hover {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
 .card .wishlist-icon {
   grid-area: wishlist-icon;
   font-size: 1.75rem;
