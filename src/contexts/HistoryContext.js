@@ -13,11 +13,13 @@ export function HistoryProvider({ children }) {
     productHistory: [],
   });
 
+  // display a product without affecting the history state
+  // used in the VisitHistory component where the product
+  // already exists on the history state
   const displayProduct = (key) => {
+    console.log("displayProduct()");
     setRouter("product");
-  };
 
-  const trackProduct = (key) => {
     // deep copy the productHistory content for modification
     const newProductHistory = [...history.productHistory];
 
@@ -33,14 +35,12 @@ export function HistoryProvider({ children }) {
     }
 
     setHistory((oldHistory) => {
-      return { ...oldHistory, productHistory: newProductHistory };
+      return { productHistory: newProductHistory, activeProduct: key };
     });
   };
 
   return (
-    <HistoryContext.Provider
-      value={{ history, setHistory, displayProduct, trackProduct }}
-    >
+    <HistoryContext.Provider value={{ history, setHistory, displayProduct }}>
       {children}
     </HistoryContext.Provider>
   );

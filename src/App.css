@@ -148,6 +148,7 @@
 .card .wishlist-icon {
   grid-area: wishlist-icon;
   font-size: 1.75rem;
+  cursor: pointer;
 }
 
 .card .cost-rating {
@@ -161,4 +162,73 @@
 
 .card .cart-button {
   grid-area: cart-button;
+  cursor: pointer;
+}
+
+/* VISIT HISTORY COMPONENT */
+.visit-history {
+  grid-area: history;
+  padding: 0.75rem 0.5rem;
+}
+
+.visit-history-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.history-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding: 0.75rem 0rem;
+}
+
+.history-container .no-history-message {
+  font-size: 2rem;
+}
+
+.history-container .history-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  padding: 0.2rem;
+  margin: 0rem 0.2rem;
+  border: solid 1px #222;
+
+  width: 19vw;
+
+  transition: 0.25s all;
+}
+
+.history-container .history-card:hover {
+  box-shadow: -1px 1px 12px 2px rgba(0, 0, 0, 0.39);
+}
+
+.history-card .image {
+  height: auto;
+  width: 100%;
+}
+
+.history-card .title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.history-card .price {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.history-card .view-button {
+  font: inherit;
+}
+
+.view-button button {
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
 }
