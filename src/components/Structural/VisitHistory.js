@@ -3,7 +3,7 @@ import { useHistory } from "../../contexts/HistoryContext";
 import { useProductData } from "../../contexts/ProductDataContext";
 
 function VisitHistory() {
-  const { history, setHistory, displayProduct, trackProduct } = useHistory();
+  const { history, setHistory, displayProduct } = useHistory();
   const { productHistory } = history;
   const isHistoryAvailable = productHistory.length > 0 ? true : false;
 

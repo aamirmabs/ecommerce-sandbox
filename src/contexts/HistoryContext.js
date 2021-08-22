@@ -19,12 +19,7 @@ export function HistoryProvider({ children }) {
   const displayProduct = (key) => {
     console.log("displayProduct()");
     setRouter("product");
-    setHistory((oldHistory) => {
-      return { ...oldHistory, activeProduct: key };
-    });
-  };
 
-  const trackProduct = (key) => {
     // deep copy the productHistory content for modification
     const newProductHistory = [...history.productHistory];
 
@@ -40,14 +35,12 @@ export function HistoryProvider({ children }) {
     }
 
     setHistory((oldHistory) => {
-      return { ...oldHistory, productHistory: newProductHistory };
+      return { productHistory: newProductHistory, activeProduct: key };
     });
   };
 
   return (
-    <HistoryContext.Provider
-      value={{ history, setHistory, displayProduct, trackProduct }}
-    >
+    <HistoryContext.Provider value={{ history, setHistory, displayProduct }}>
       {children}
     </HistoryContext.Provider>
   );

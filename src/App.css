@@ -148,6 +148,7 @@
 .card .wishlist-icon {
   grid-area: wishlist-icon;
   font-size: 1.75rem;
+  cursor: pointer;
 }
 
 .card .cost-rating {
@@ -161,6 +162,7 @@
 
 .card .cart-button {
   grid-area: cart-button;
+  cursor: pointer;
 }
 
 /* VISIT HISTORY COMPONENT */

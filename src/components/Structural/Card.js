@@ -8,7 +8,7 @@ import StarRating from "../Structural/StarRating";
 import AddToCartBtn from "../Structural/AddToCartBtn";
 
 function Card(props) {
-  const { displayProduct, trackProduct } = useHistory();
+  const { displayProduct } = useHistory();
   const { productData } = useProductData();
   const { cartState, cartDispatch } = useCart();
 
@@ -25,6 +25,9 @@ function Card(props) {
         <img
           src={product.images.base + product.images.card.path}
           alt={"image of " + title}
+          onClick={() => {
+            displayProduct(key);
+          }}
         />
       </div>
       <div className="title">
@@ -32,7 +35,6 @@ function Card(props) {
           className="card-title"
           onClick={() => {
             displayProduct(key);
-            trackProduct(key);
           }}
         >
           {title}
