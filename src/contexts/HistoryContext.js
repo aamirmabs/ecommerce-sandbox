@@ -11,6 +11,7 @@ export function HistoryProvider({ children }) {
   const [history, setHistory] = useState({
     activeProduct: null,
     productHistory: [],
+    activeCategory: "keyboard",
   });
 
   // display a product without affecting the history state
@@ -35,7 +36,11 @@ export function HistoryProvider({ children }) {
     }
 
     setHistory((oldHistory) => {
-      return { productHistory: newProductHistory, activeProduct: key };
+      return {
+        ...oldHistory,
+        productHistory: newProductHistory,
+        activeProduct: key,
+      };
     });
   };
 

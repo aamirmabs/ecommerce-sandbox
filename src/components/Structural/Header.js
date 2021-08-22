@@ -8,13 +8,15 @@ function Header() {
 
   return (
     <div className="header">
-      <div className="header-logo">
-        <h1>Logo</h1>
+      <div className="header-logo" onClick={() => setRouter("home")}>
+        <h1>
+          <i class="fas fa-keyboard"></i> KeyShack
+        </h1>
       </div>
       <div className="header-menu">
         <span onClick={() => setRouter("home")}>Home</span>
         <span onClick={() => setRouter("category")}>Category</span>
-        <span onClick={() => setRouter("product")}>Product</span>
+        {/* <span onClick={() => setRouter("product")}>Product</span> */}
         <span onClick={() => setRouter("wishlist")}>Wishlist</span>
         <span onClick={() => setRouter("cart")}>Cart</span>
       </div>
