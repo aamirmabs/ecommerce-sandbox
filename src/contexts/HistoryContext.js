@@ -13,8 +13,15 @@ export function HistoryProvider({ children }) {
     productHistory: [],
   });
 
+  // display a product without affecting the history state
+  // used in the VisitHistory component where the product
+  // already exists on the history state
   const displayProduct = (key) => {
+    console.log("displayProduct()");
     setRouter("product");
+    setHistory((oldHistory) => {
+      return { ...oldHistory, activeProduct: key };
+    });
   };
 
   const trackProduct = (key) => {

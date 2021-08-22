@@ -22,11 +22,13 @@ function VisitHistory() {
           const { price } = parameters;
           const { base, card } = images;
           return (
-            <div className="history-card">
+            <div className="history-card" key={key}>
               <div className="image">
                 <img src={base + card.path} alt={title} />
               </div>
-              <div className="title">{title}</div>
+              <div className="title" onClick={() => displayProduct(key)}>
+                {title}
+              </div>
               <div className="price">$ {price}</div>
               <div className="view-button">
                 <button>View</button>
