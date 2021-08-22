@@ -1,10 +1,13 @@
 import React from "react";
 import { useHistory } from "../../contexts/HistoryContext";
+import { useProductData } from "../../contexts/ProductDataContext";
 
 function VisitHistory() {
   const { history, setHistory, displayProduct, trackProduct } = useHistory();
   const { productHistory } = history;
   const isHistoryAvailable = productHistory.length > 0 ? true : false;
+
+  const { productData } = useProductData();
   // history{
   //   activeProduct: null,
   //   productHistory: [],
@@ -14,8 +17,22 @@ function VisitHistory() {
     <div className="visit-history">
       <div className="visit-history-title">Recently Viewed</div>
       <div className="history-container">
-        {productHistory.map((historyItem) => {
-          return <div className="history-card">{historyItem}</div>;
+        {productHistory.map((key) => {
+          const { title, parameters, images } = productData[key];
+          const { price } = parameters;
+          const { base, card } = images;
+          return (
+            <div className="history-card">
+              <div className="image">
+                <img src={base + card.path} alt={title} />
+              </div>
+              <div className="title">{title}</div>
+              <div className="price">$ {price}</div>
+              <div className="view-button">
+                <button>View</button>
+              </div>
+            </div>
+          );
         })}
 
         <div className="history-card">

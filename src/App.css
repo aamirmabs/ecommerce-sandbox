@@ -166,20 +166,16 @@
 /* VISIT HISTORY COMPONENT */
 .visit-history {
   grid-area: history;
-
   padding: 0.75rem 0.5rem;
 }
 
 .visit-history-title {
-  font: inherit;
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
 }
 
 .history-container {
-  font: inherit;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -188,8 +184,6 @@
 }
 
 .history-container .history-card {
-  font: inherit;
-
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -208,17 +202,18 @@
 }
 
 .history-card .image {
-  height: 200px;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 .history-card .title {
-  font-size: 2rem;
+  font-size: 1.1rem;
   font-weight: 700;
+  flex-grow: 1;
 }
 
 .history-card .price {
-  font-size: 1.75rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -227,7 +222,6 @@
 }
 
 .view-button button {
-  font: inherit;
   font-size: 1rem;
   padding: 0.25rem 0.5rem;
 }
