@@ -11,8 +11,8 @@ function CategoryPage() {
 
   return (
     <div className="category-page">
-      <div class="filters">FILTERS</div>
-      <div class="results">
+      <div className="filters">FILTERS</div>
+      <div className="results">
         {/* TODO: create a state in historyContext to track
         activeCategory on click */}
         <CardGallery category={activeCategory} limit={20} />
