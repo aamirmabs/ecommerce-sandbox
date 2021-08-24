@@ -16,16 +16,43 @@ function Wishlist() {
     return acc;
   }, []);
 
+  const emptyWishlistJSX = (
+    <div className="empty-wishlist-content">
+      <div className="wishlist-icon">
+        <i className="far fa-bookmark"></i>
+      </div>
+      <div className="wishlist-content">
+        Your wishlist is <strong>EMPTY</strong>...
+      </div>
+    </div>
+  );
+
+  const itemsInWishlistJSX = (
+    <div className="card-grid">
+      {wishlistKeys.map((key) => {
+        return <Card key={Math.random().toFixed(5) * 10000} productKey={key} />;
+      })}
+    </div>
+  );
+
   return (
     <div className="wishlist-page">
-      <div className="card-grid">
-        {wishlistKeys.map((key) => {
-          return (
-            <Card key={Math.random().toFixed(5) * 10000} productKey={key} />
-          );
-        })}
+      <div class="wishlist-area">
+        <div className="title">
+          <h1>WISHLIST</h1>
+        </div>
+        {wishlistKeys.length > 0 ? itemsInWishlistJSX : emptyWishlistJSX}
+        {/* <div className="card-grid">
+          {wishlistKeys.map((key) => {
+            return (
+              <Card key={Math.random().toFixed(5) * 10000} productKey={key} />
+            );
+          })}
+        </div> */}
       </div>
-      <VisitHistory />
+      <div class="recent-items">
+        <VisitHistory />
+      </div>
     </div>
   );
 }
