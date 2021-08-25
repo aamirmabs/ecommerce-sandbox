@@ -22,6 +22,10 @@
   padding: 1rem;
 }
 
+.empty-wishlist-content {
+  padding: 1rem;
+}
+
 .empty-wishlist-content .wishlist-icon {
   display: flex;
   flex-direction: row;
@@ -34,4 +38,5 @@
 
 .recent-items {
   grid-area: recent-items;
+  background-color: white;
 }

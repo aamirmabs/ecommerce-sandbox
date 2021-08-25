@@ -42,13 +42,6 @@ function Wishlist() {
           <h1>WISHLIST</h1>
         </div>
         {wishlistKeys.length > 0 ? itemsInWishlistJSX : emptyWishlistJSX}
-        {/* <div className="card-grid">
-          {wishlistKeys.map((key) => {
-            return (
-              <Card key={Math.random().toFixed(5) * 10000} productKey={key} />
-            );
-          })}
-        </div> */}
       </div>
       <div class="recent-items">
         <VisitHistory />
