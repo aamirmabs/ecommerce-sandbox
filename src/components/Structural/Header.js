@@ -5,8 +5,8 @@ import { useRouter } from "../../contexts/RouterContext";
 import { useHistory } from "../../contexts/HistoryContext";
 
 function Header() {
-  const { setRouter } = useRouter();
-  const { displayCategory } = useHistory();
+  const { router, setRouter } = useRouter();
+  const { history, displayCategory } = useHistory();
 
   return (
     <div className="header">
@@ -16,12 +16,45 @@ function Header() {
         </h1>
       </div>
       <div className="header-menu">
-        <span onClick={() => setRouter("home")}>Home</span>
-        <span onClick={() => displayCategory("keyboard")}>Keyboards</span>
-        <span onClick={() => displayCategory("keycap")}>Keycaps</span>
-        {/* <span onClick={() => setRouter("product")}>Product</span> */}
-        <span onClick={() => setRouter("wishlist")}>Wishlist</span>
-        <span onClick={() => setRouter("cart")}>Cart</span>
+        <div
+          className={router === "home" && "active"}
+          onClick={() => setRouter("home")}
+        >
+          Home
+        </div>
+        <div
+          className={
+            router === "category" &&
+            history.activeCategory === "keyboard" &&
+            "active"
+          }
+          onClick={() => displayCategory("keyboard")}
+        >
+          Keyboards
+        </div>
+        <div
+          className={
+            router === "category" &&
+            history.activeCategory === "keycap" &&
+            "active"
+          }
+          onClick={() => displayCategory("keycap")}
+        >
+          Keycaps
+        </div>
+        {/* <div className={router === "" && "active"} onClick={() => setRouter("product")}>Product</div> */}
+        <div
+          className={router === "wishlist" && "active"}
+          onClick={() => setRouter("wishlist")}
+        >
+          Wishlist
+        </div>
+        <div
+          className={router === "cart" && "active"}
+          onClick={() => setRouter("cart")}
+        >
+          Cart
+        </div>
       </div>
     </div>
   );
