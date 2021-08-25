@@ -30,7 +30,7 @@ function VisitHistory() {
         </div>
         <div className="price">$ {price}</div>
         <div className="view-button">
-          <button>View</button>
+          <button onClick={() => displayProduct(key)}>View</button>
         </div>
       </div>
     );

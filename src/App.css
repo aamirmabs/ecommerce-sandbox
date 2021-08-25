@@ -5,6 +5,7 @@
 
   display: grid;
   grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 .header {
@@ -13,6 +14,7 @@
 
 .content {
   background-color: inherit;
+  background-color: rgb(247, 247, 247);
 }
 
 .footer {
@@ -100,10 +102,11 @@
 
 .card-grid .card {
   font: inherit;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 0.25rem;
+  padding: 0.25rem;
   border: 2px solid #222;
   width: 30%;
+  text-align: center;
 
   display: grid;
   grid-template-columns: auto 25px;
@@ -125,7 +128,7 @@
 .card .title {
   grid-area: title;
 
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
@@ -154,15 +157,25 @@
 .card .cost-rating {
   grid-area: cost;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   font-size: 1.25rem;
   font-weight: 500;
 }
 
+.cost-rating .cost {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.cost-rating .rating i {
+  font-size: 0.8rem;
+}
+
 .card .cart-button {
   grid-area: cart-button;
   cursor: pointer;
+  font-size: 1.25rem;
 }
 
 /* VISIT HISTORY COMPONENT */

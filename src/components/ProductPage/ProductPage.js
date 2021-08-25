@@ -3,6 +3,7 @@ import "./ProductPage.css";
 
 import { useProductData } from "../../contexts/ProductDataContext";
 import { useHistory } from "../../contexts/HistoryContext";
+import { useCart } from "../../contexts/CartContext";
 
 import Slider from "../Structural/Slider";
 import PrimaryDesc from "./PrimaryDesc";
@@ -15,6 +16,9 @@ function ProductPage(props) {
 
   const { productData } = useProductData();
   const product = productData[key];
+
+  const { cartState } = useCart();
+  const { inWishlist } = cartState[key];
 
   const { base } = product.images;
   const slidesArray = product.images.slider;
@@ -30,6 +34,7 @@ function ProductPage(props) {
       <PrimaryDesc
         title={product.title}
         data={product.parameters}
+        inWishlist={inWishlist}
         productKey={key}
       />
       <SecondaryDesc data={product.description} />

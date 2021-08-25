@@ -5,15 +5,32 @@
 }
 
 .header-logo {
-  background-color: chartreuse;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.header-logo:hover {
+  color: rgb(255, 31, 31);
 }
 
 .header-menu {
-  background-color: beige;
+  background-color: inherit;
+
+  display: flex;
+  flex-direction: row;
 }
 
-.header-menu span {
-  padding: 0.25rem 1rem;
+.header-menu div {
+  margin: 0.25rem 1rem;
   font-size: 1.5rem;
   font-weight: 700;
+  transition: all 0.25s;
+}
+
+.header-menu div:hover {
+  color: rgb(255, 31, 31);
+}
+
+.header-menu div.active {
+  border-bottom: 5px solid rgb(255, 31, 31);
 }

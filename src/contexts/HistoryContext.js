@@ -11,6 +11,7 @@ export function HistoryProvider({ children }) {
   const [history, setHistory] = useState({
     activeProduct: null,
     productHistory: [],
+    activeCategory: "keycap",
   });
 
   // display a product without affecting the history state
@@ -35,12 +36,31 @@ export function HistoryProvider({ children }) {
     }
 
     setHistory((oldHistory) => {
-      return { productHistory: newProductHistory, activeProduct: key };
+      return {
+        ...oldHistory,
+        productHistory: newProductHistory,
+        activeProduct: key,
+      };
+    });
+  };
+
+  const displayCategory = (category) => {
+    console.log("displayCategory()");
+    console.log(category);
+    setRouter("category");
+
+    setHistory((oldHistory) => {
+      return {
+        ...oldHistory,
+        activeCategory: category,
+      };
     });
   };
 
   return (
-    <HistoryContext.Provider value={{ history, setHistory, displayProduct }}>
+    <HistoryContext.Provider
+      value={{ history, setHistory, displayProduct, displayCategory }}
+    >
       {children}
     </HistoryContext.Provider>
   );

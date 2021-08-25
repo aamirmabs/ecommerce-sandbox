@@ -67,8 +67,8 @@ function Card(props) {
         )}
       </div>
       <div className="cost-rating">
-        <div>$ {price}</div>
-        <div>
+        <div className="cost">$ {price}</div>
+        <div class-name="rating">
           <StarRating rating={rating} />
         </div>
       </div>

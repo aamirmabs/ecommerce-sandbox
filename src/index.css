@@ -27,7 +27,6 @@ p {
 }
 
 button {
-  font-size: 1.5rem;
   font-weight: 700;
   padding: 0.5rem 0.75rem;
   margin: 0.25rem;
@@ -41,7 +40,8 @@ button:hover {
 }
 
 button.btn-cart {
-  min-width: 10rem;
+  font-size: 1.1rem;
+  min-width: 8rem;
   background-color: #222;
   border: solid 5px gold;
   color: #fff;
