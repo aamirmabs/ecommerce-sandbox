@@ -11,11 +11,11 @@ function Slider(props) {
   //   ]}
   // />;
 
-  const { base, controller } = props;
+  const { containerClass, slideClass, base, files } = props;
 
   const [index, setIndex] = useState(0);
 
-  let maxSlides = controller.length - 1;
+  let maxSlides = files.length - 1;
 
   useEffect(() => {
     const slideManager = setInterval(() => {
@@ -31,18 +31,12 @@ function Slider(props) {
   }, []);
 
   return (
-    <div className="hero-slider">
+    <div className={containerClass}>
       <img
-        className="hero-slide"
-        src={base + controller[index].fileName}
+        className={slideClass}
+        src={base + files[index]}
         alt={"slider image " + Math.random().toFixed(2) * 100}
       />
-      <div className="hero-slide-description">
-        <div className="slide-title">DESCRIPTION</div>
-        <div className="slide-link">
-          <button className="btn-cart">View</button>
-        </div>
-      </div>
     </div>
   );
 }

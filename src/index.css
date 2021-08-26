@@ -32,6 +32,8 @@ button {
   margin: 0.25rem;
   border-radius: 0.5rem;
   transition: all 0.25s;
+  font-size: 1.1rem;
+  -webkit-font-smoothing: antialiased;
 }
 
 button:hover {
@@ -40,12 +42,9 @@ button:hover {
 }
 
 button.btn-cart {
-  font-size: 1.1rem;
   min-width: 8rem;
   background-color: #222;
   border: solid 5px gold;
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
   color: gold;
 }
 
@@ -54,4 +53,17 @@ button.btn-cart:hover {
   border: solid 5px #222;
   color: #222;
   -webkit-font-smoothing: antialiased;
+}
+
+button.btn-secondary {
+  min-width: 8rem;
+  background-color: gold;
+  border: solid 5px #222;
+  color: #222;
+}
+
+button.btn-secondary:hover {
+  background-color: #222;
+  border: solid 5px gold;
+  color: gold;
 }
