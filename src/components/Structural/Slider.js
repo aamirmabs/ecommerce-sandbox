@@ -11,7 +11,7 @@ function Slider(props) {
   //   ]}
   // />;
 
-  const { base, controller, files } = props;
+  const { base, controller } = props;
 
   const [index, setIndex] = useState(0);
 
@@ -37,6 +37,12 @@ function Slider(props) {
         src={base + controller[index].fileName}
         alt={"slider image " + Math.random().toFixed(2) * 100}
       />
+      <div className="hero-slide-description">
+        <div className="slide-title">DESCRIPTION</div>
+        <div className="slide-link">
+          <button className="btn-cart">View</button>
+        </div>
+      </div>
     </div>
   );
 }
