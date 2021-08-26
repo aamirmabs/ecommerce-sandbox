@@ -39,6 +39,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -131,6 +132,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -219,6 +221,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -307,6 +310,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -395,6 +399,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -483,6 +488,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -571,6 +577,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -659,6 +666,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -747,6 +755,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -835,6 +844,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -923,6 +933,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -1015,6 +1026,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -1103,6 +1115,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -1191,6 +1204,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -1279,6 +1293,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -1367,6 +1382,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -1455,6 +1471,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -1543,6 +1560,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -1631,6 +1649,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
@@ -1719,6 +1738,7 @@ export function ProductProvider({ children }) {
         card: {
           path: `card.jpg`,
         },
+        hero: `hero.jpg`,
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
