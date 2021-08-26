@@ -927,7 +927,7 @@ export function ProductProvider({ children }) {
     },
     keycap001: {
       category: { primary: `keycap`, secondary: [] },
-      title: `Keycap - DROP SHIFT MECHANICAL KEYBOARD`,
+      title: `DWARF FACTORY GNARLY DRAGON ARTISAN KEYCAP`,
       images: {
         base: `/assets/images/products/keyboard001/`,
         card: {
@@ -937,9 +937,9 @@ export function ProductProvider({ children }) {
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
-        price: 250,
-        rating: 4,
-        brand: "Drop",
+        price: 45,
+        rating: 5,
+        brand: "DWARF FACTORY",
         layout: "tkl",
         layoutText: "Ten KeyLess (TKL)",
       },
@@ -1020,7 +1020,7 @@ export function ProductProvider({ children }) {
     },
     keycap002: {
       category: { primary: `keycap`, secondary: [] },
-      title: `Keycap - DROP + TOKYO KEYBOARD TOKYO60 KEYBOARD KIT`,
+      title: `ZMKC POCKET GAME CONSOLE ARTISAN KEYCAP`,
       images: {
         base: `/assets/images/products/keyboard002/`,
         card: {
@@ -1030,7 +1030,7 @@ export function ProductProvider({ children }) {
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
-        price: 250,
+        price: 35,
         rating: 4,
         brand: "Tokyo",
         layout: "60",
@@ -1109,7 +1109,7 @@ export function ProductProvider({ children }) {
     },
     keycap003: {
       category: { primary: `keycap`, secondary: [] },
-      title: `Keycap - DROP CTRL BAREBONES MECHANICAL KEYBOARD`,
+      title: `DWARF FACTORY TERRARIUM RESIN ARTISAN KEYCAP`,
       images: {
         base: `/assets/images/products/keyboard003/`,
         card: {
@@ -1119,9 +1119,9 @@ export function ProductProvider({ children }) {
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
-        price: 150,
-        rating: 4,
-        brand: "CTRL",
+        price: 44,
+        rating: 5,
+        brand: "DWARF FACTORY",
         layout: "60",
         layoutText: "60%",
       },
@@ -1198,7 +1198,7 @@ export function ProductProvider({ children }) {
     },
     keycap004: {
       category: { primary: `keycap`, secondary: [] },
-      title: `Keycap - DROP + OLKB PLANCK MECHANICAL KEYBOARD KIT V6`,
+      title: `GEN.S MONITOR SCREEN V2 RESIN ARTISAN KEYCAP`,
       images: {
         base: `/assets/images/products/keyboard004/`,
         card: {
@@ -1208,9 +1208,9 @@ export function ProductProvider({ children }) {
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
-        price: 100,
+        price: 35,
         rating: 5,
-        brand: "OLKB",
+        brand: "GEN.S",
         layout: "40",
         layoutText: "40%",
       },
@@ -1287,7 +1287,7 @@ export function ProductProvider({ children }) {
     },
     keycap005: {
       category: { primary: `keycap`, secondary: [] },
-      title: `Keycap - DROP + OLKB PREONIC KEYBOARD MX KIT V3`,
+      title: `DWARF FACTORY FOODIE ARTISAN KEYCAP`,
       images: {
         base: `/assets/images/products/keyboard005/`,
         card: {
@@ -1297,9 +1297,9 @@ export function ProductProvider({ children }) {
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
-        price: 140,
+        price: 44,
         rating: 5,
-        brand: "OLKB",
+        brand: "DWARF FACTORY",
         layout: "40",
         layoutText: "40%",
       },
@@ -1376,7 +1376,7 @@ export function ProductProvider({ children }) {
     },
     keycap006: {
       category: { primary: `keycap`, secondary: [] },
-      title: `Keycap - DROP CTRL HIGH-PROFILE BAREBONES KEYBOARD`,
+      title: `TEAMWOLF STAINLESS STEEL MX KEYCAPS`,
       images: {
         base: `/assets/images/products/keyboard006/`,
         card: {
@@ -1386,9 +1386,9 @@ export function ProductProvider({ children }) {
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
-        price: 200,
-        rating: 4,
-        brand: "CTRL",
+        price: 33,
+        rating: 5,
+        brand: "TEAMWOLF",
         layout: "60",
         layoutText: "60%",
       },
@@ -1465,7 +1465,7 @@ export function ProductProvider({ children }) {
     },
     keycap007: {
       category: { primary: `keycap`, secondary: [] },
-      title: `Keycap - DROP ALT HIGH-PROFILE MECHANICAL KEYBOARD`,
+      title: `MOON KEY 4 SEASONS ARTISAN KEYCAP`,
       images: {
         base: `/assets/images/products/keyboard007/`,
         card: {
@@ -1475,9 +1475,9 @@ export function ProductProvider({ children }) {
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
-        price: 230,
+        price: 45,
         rating: 4,
-        brand: "ALT",
+        brand: "MOON KEY",
         layout: "full",
         layoutText: "Full Size (100%)",
       },
@@ -1554,7 +1554,7 @@ export function ProductProvider({ children }) {
     },
     keycap008: {
       category: { primary: `keycap`, secondary: [] },
-      title: `Keycap - DROP ALT HIGH-PROFILE MECHANICAL KEYBOARD`,
+      title: `MITO X HOT KEYS PROJECT BUCKET HEAD`,
       images: {
         base: `/assets/images/products/keyboard008/`,
         card: {
@@ -1564,9 +1564,9 @@ export function ProductProvider({ children }) {
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
-        price: 90,
+        price: 10,
         rating: 5,
-        brand: "ENTR",
+        brand: "Mito",
         layout: "tkl",
         layoutText: "Tenkeyless (TKL)",
       },
@@ -1643,7 +1643,7 @@ export function ProductProvider({ children }) {
     },
     keycap009: {
       category: { primary: `keycap`, secondary: [] },
-      title: `Keycap - YMDK SPLIT 64 HOT-SWAPPABLE MECHANICAL KEYBOARD KIT`,
+      title: `SADAN SILVER GEM BACKLIT SILVER ARTISAN KEYCAP`,
       images: {
         base: `/assets/images/products/keyboard009/`,
         card: {
@@ -1653,9 +1653,9 @@ export function ProductProvider({ children }) {
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
-        price: 180,
-        rating: 5,
-        brand: "YMDK",
+        price: 25,
+        rating: 3,
+        brand: "Sadan",
         layout: "ergo",
         layoutText: "Split & Ergonomic",
       },
@@ -1732,7 +1732,7 @@ export function ProductProvider({ children }) {
     },
     keycap010: {
       category: { primary: `keycap`, secondary: [] },
-      title: `Keycap - LOGITECH PRO GAMING KEYBOARD`,
+      title: `KEYCRAFT SPACESHIP ARTISAN KEYCAP`,
       images: {
         base: `/assets/images/products/keyboard010/`,
         card: {
@@ -1742,9 +1742,9 @@ export function ProductProvider({ children }) {
         slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
       },
       parameters: {
-        price: 118,
+        price: 45,
         rating: 5,
-        brand: "Logitech",
+        brand: "keycraft",
         layout: "tkl",
         layoutText: "Ten KeyLess (TKL)",
       },

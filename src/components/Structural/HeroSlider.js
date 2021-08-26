@@ -11,8 +11,9 @@ const HeroSlider = () => {
     { key: "keyboard001" },
     { key: "keyboard002" },
     { key: "keyboard003" },
-    { key: "keyboard004" },
-    { key: "keyboard005" },
+    { key: "keycap005" },
+    { key: "keycap007" },
+    { key: "keycap008" },
   ];
 
   const [index, setIndex] = useState(0);
